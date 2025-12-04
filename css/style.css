@@ -267,9 +267,13 @@ a[href="#top"] {
     flex-direction: column;
     gap: 12px;
     max-width: 600px;
-    margin-top: 20px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
-
     .contact-form label {
         font-weight: bold;
         color: var(--accent);
@@ -475,6 +479,7 @@ body.light {
         border-top: 1px solid rgba(0,0,0,0.15);
     }
 
+
     body.light table th {
         background: rgba(0,0,0,0.05);
         color: var(--accent);
@@ -505,6 +510,7 @@ body.light {
     body.light a[href="#top"] {
         color: var(--accent);
     }
+
 
         body.light a[href="#top"]:hover {
             color: var(--accent-hover);
@@ -570,3 +576,78 @@ body.light .video-wrapper {
     body.light .video-wrapper:hover {
         box-shadow: 0 14px 35px rgba(0,0,0,0.15);
     }
+
+body.light .contact-form {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+    body.light .contact-form input,
+    body.light .contact-form textarea {
+        background: #ffffff;
+        color: #1a1a1a;
+        border: 1px solid rgba(0,0,0,0.25);
+    }
+
+        body.light .contact-form input::placeholder,
+        body.light .contact-form textarea::placeholder {
+            color: #555;
+        }
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 40px 0;
+    flex-wrap: nowrap;
+}
+
+.about-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+    .about-text p,
+    .about-text ul {
+        margin-bottom: 18px;
+    }
+
+@media (max-width: 850px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 460px; 
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .about-image img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+        }
+    .about-text {
+        text-align: center;
+    }
+
+        .about-text ul {
+            text-align: left;
+            max-width: 90%;
+            margin: 10px auto;
+        }
+}
