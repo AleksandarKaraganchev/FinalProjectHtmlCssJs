@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --bg: #0b1220;
     --header-bg: #0f182e;
     --footer-bg: #0b1220;
@@ -441,17 +441,23 @@ body.light {
 }
 
     body.light .container {
-        background: rgba(255, 255, 255, 0.60);
-        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.58);
+        border-radius: 14px;
         padding: 20px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
     }
 
+
     body.light .site-header {
-        background: #ffffff;
-        border-bottom: 1px solid rgba(0,0,0,0.08);
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     }
+
 
     body.light .nav-list a {
         color: #222;
@@ -463,9 +469,13 @@ body.light {
         }
 
     body.light .dropdown-menu {
-        background: #ffffff;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
     }
+
 
         body.light .dropdown-menu a {
             color: #222;
@@ -578,10 +588,13 @@ body.light .video-wrapper {
     }
 
 body.light .contact-form {
-    background: rgba(255,255,255,0.7);
-    border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
 }
+
 
     body.light .contact-form input,
     body.light .contact-form textarea {
