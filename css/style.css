@@ -685,4 +685,27 @@ body.light .contact-form {
     }
 }
 
-
+@media (max-width: 850px) {
+    body.light .nav-list {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+        body.light .nav-list a {
+            color: #1a1a1a !important;
+        }
+            body.light .nav-list a:hover {
+                background: rgba(0, 0, 0, 0.05);
+                color: var(--accent);
+            }
+    body.light .dropdown-menu {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+        body.light .dropdown-menu a {
+            color: #1a1a1a !important;
+        }
+}
